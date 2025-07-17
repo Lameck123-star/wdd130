@@ -10,9 +10,9 @@ nav {
 nav a {
   color: white;
   display: block;
-  padding: 0;
   margin: 0;
-  border: none;
+  padding: 0;
+  border: none; /* Correct way to remove border */
 }
 
 h1 {
@@ -30,5 +30,5 @@ img {
 aside {
   width: 20em;
   margin: 1em;
-  border: 1;
+  border: 1px solid black; /* Correct usage with unit */
 }
