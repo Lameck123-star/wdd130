@@ -1,6 +1,6 @@
-from pytest import approx
-import pytest
-from water_flow import water_column_height, pressure_gain_from_water_height, pressure_loss_from_pipe, pressure_loss_from_fittings, reynolds_number
+#pytest import approx
+# pytest
+# water_flow import water_column_height, pressure_gain_from_water_height, pressure_loss_from_pipe, pressure_loss_from_fittings, reynolds_number
 
 def test_water_column_height():
     assert water_column_height(0.0, 0.0) == approx(0.0)
@@ -38,5 +38,8 @@ def test_reynolds_number():
 
 # Call the main function that is part of pytest so that the
 # computer will execute the test functions in this file.
-pytest.main(["-v", "--tb=line"])
-python water_flow.py
+if __name__ == "__main__":
+     # This line is a placeholder for the actual pytest call
+    def pytest_main():
+        import pytest
+        pytest.main([__file__])
